@@ -57,10 +57,26 @@ The goal of this project was to design a centralized analytics workflow that con
 | Barrels Per Month | float  |
 | Barrels YTD       | float  |
 
+
 # Process Review
 ![data structure diagram](data_structure_diagram.jpg)
 
-Complicated Google Sheets system requires daily manual reconcialiation of incoming order CSVs and HubSpot customer properties. Requires sales leaders to consume significant time to prepare for weekly rep oversight, distributor alignment, and report/KPI generation for senior stakeholder visibility.
+The existing workflow relied on a network of interdependent Google Sheets used to manually ingest, clean, and reconcile daily distributor order CSVs against HubSpot customer records. Each incoming file required hands-on validation, copy/paste transformations, and manual joins to CRM exports in order to align orders with accounts, territories, and sales ownership.
+
+This process introduced several constraints:
+
+High manual overhead: Daily reconciliation consumed significant sales leadership time, reducing capacity for coaching, distributor coordination, and pipeline management.
+
+Error risk and version drift: Multiple sheets with duplicated logic increased the likelihood of formula breakage, inconsistent definitions, and conflicting outputs across reports.
+
+Delayed visibility: Reporting lagged behind actual sales activity, limiting the usefulness of weekly rep reviews and senior KPI dashboards.
+
+Limited scalability: As order volume, SKUs, and sales reps increased, the system required proportional increases in manual effort and became increasingly brittle.
+
+Poor auditability: Historical changes to customer attributes and order mappings were difficult to trace, limiting confidence in reported metrics.
+
+As a result, sales operations and leadership were forced to prioritize data preparation over analysis and decision-making, constraining the organization’s ability to respond quickly to performance trends and account-level risks.
+
 
 # Methods
 Implemented automated CSV ingestion of distributor order data via email-triggered Azure Logic Apps. Files are written to Azure Blob Storage and processed by a SQL Server stored procedure.
@@ -73,6 +89,7 @@ Created SQL views to reconcile order data with CRM company records and identify 
 
 Pushed curated company updates back to HubSpot to maintain a single source of truth across systems.
 
+
 # Insights
 Sales concentration: A small, consistent subset of accounts drives a disproportionate share of revenue, indicating a clear Protect/Grow account segment.
 
@@ -81,6 +98,7 @@ SKU mix: The original launch flavor is being outperformed by newer SKUs, suggest
 Sales activity: Historical sales outreach showed high variability across reps. Introducing minimum activity benchmarks, combined with reduced administrative overhead, increased outreach volume by 50%+ for newer reps.
 
 Better access to 
+
 
 # Recommendations
 Reduce CRM complexity- sales reps should only use HubSpot for meeting activities to eliminate need for integration and managing multiple apps. Reduce MMC licenses down to 1, saving ~$10k/year. One MMC superuser can perform all territory and mapping tasks

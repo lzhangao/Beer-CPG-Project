@@ -6,27 +6,29 @@ The goal of this project was to design a centralized analytics workflow that con
 # Data Structure Overview
 
 Orders Data Structure
-| Customer Key  | int    |
+| Orders        |        |
 |---------------|--------|
+| Customer Key  | int    |
 | Customer Name | string |
-| City          | string |
 | Address       | string |
+| City          | string |
 | Postal Code   | int    |
 | Premise Type  | string |
 | Sales Person  | string |
 | Sales Date    | date   |
+| Order Number  | int    |
 | Item Key      | int    |
 | Item Name     | string |
-| Order Number  | int    |
 | Item Price    | float  |
 | Item Qty      | int    |
 | Cases         | float  |
 | Barrels       | float  |
 | Net Revenue   | float  |
 
-Meetings Data Structure
-| Company Name       | int      |
+
+| Meetings           |          |
 |--------------------|----------|
+| Company ID         | int      |
 | Company Name       | string   |
 | SalesPerson Name   | string   |
 | Meeting Type       | string   |
@@ -34,18 +36,11 @@ Meetings Data Structure
 | Meeting notes      | string   |
 | Associated Deal    | string   |
 | Associated Deal ID | int      |
-| Item Key           | int      |
-| Item Name          | string   |
-| Order Number       | int      |
-| Item Price         | float    |
-| Item Qty           | int      |
-| Cases              | float    |
-| Barrels            | float    |
-| Net Revenue        | float    |
 
-Customers Data Structure
-| Record ID         | int    |
+
+| Companies         |        |
 |-------------------|--------|
+| Record ID         | int    |
 | Customer Key      | int    |
 | Customer Name     | string |
 | City              | string |

@@ -58,16 +58,26 @@ The goal of this project was to design a centralized analytics workflow that con
 | Barrels Per Month | float  |
 | Barrels YTD       | float  |
 
+# Process Review
 # Methods
-Email ingestion of CSV orders, Azure logic app sends CSV to blob storage and runs stored procedure writing records into SQL db
+Implemented automated CSV ingestion of distributor order data via email-triggered Azure Logic Apps. Files are written to Azure Blob Storage and processed by a SQL Server stored procedure.
 
-Raw order table to compile all raw orders from distributor, Cleaned order table to compile orders with custom logic, new columns, data cleaning
+Maintained a RawOrders table to preserve all inbound distributor data and a CleanOrders table applying custom business logic, schema normalization, and derived metrics.
 
-API-call to gather up to date companies records from HubSpot and send to SQL db
+Built a Python-based HubSpot API integration to pull current company records and properties into SQL Server on a scheduled basis.
 
-New views in SQL to reconcile orders and companies records. Import updated companies table to HubSpot
+Created SQL views to reconcile order data with CRM company records and identify mismatches and enrichment gaps.
+
+Pushed curated company updates back to HubSpot to maintain a single source of truth across systems.
 
 # Insights
+Sales concentration: A small, consistent subset of accounts drives a disproportionate share of revenue, indicating a clear Protect/Grow account segment.
+
+SKU mix: The original launch flavor is being outperformed by newer SKUs, suggesting shifting customer preferences.
+
+Sales activity: Historical sales outreach showed high variability across reps. Introducing minimum activity benchmarks, combined with reduced administrative overhead, increased outreach volume by 50%+ for newer reps.
+
+Better access to 
 
 # Recommendations
-
+Reduce CRM complexity- sales reps should only use HubSpot for meeting activities to eliminate need for integration and managing multiple apps. Reduce MMC licenses down to 1, saving ~$10k/year. One MMC superuser can perform all territory and mapping tasks

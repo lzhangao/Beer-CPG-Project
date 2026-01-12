@@ -6,7 +6,7 @@ The goal of this project was to design a centralized analytics workflow that con
 # Data Structure Overview
 
 Orders Data Structure
-| Orders        |        |
+| Orders        | data type|
 |---------------|--------|
 | Customer Key  | int    |
 | Customer Name | string |

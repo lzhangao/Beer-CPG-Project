@@ -6,7 +6,7 @@ The goal of this project was to design a centralized analytics workflow that con
 # Data Structure Overview
 
 Orders Data Structure
-| Orders        | data type|
+| Orders Columns| data type|
 |---------------|--------|
 | Customer Key  | int    |
 | Customer Name | string |
@@ -26,7 +26,7 @@ Orders Data Structure
 | Net Revenue   | float  |
 
 
-| Meetings           |          |
+| Meetings Columns   | data type|
 |--------------------|----------|
 | Company ID         | int      |
 | Company Name       | string   |
@@ -38,7 +38,7 @@ Orders Data Structure
 | Associated Deal ID | int      |
 
 
-| Companies         |        |
+| Companies columns | data type|
 |-------------------|--------|
 | Record ID         | int    |
 | Customer Key      | int    |

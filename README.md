@@ -59,10 +59,15 @@ The goal of this project was to design a centralized analytics workflow that con
 | Barrels YTD       | float  |
 
 # Methods
-Email ingestion of CSV orders, Azure logic app sends CSV to blob storage and runs stored procedure writing records into SQL table 
+Email ingestion of CSV orders, Azure logic app sends CSV to blob storage and runs stored procedure writing records into SQL db
 
 Raw order table to compile all raw orders from distributor, Cleaned order table to compile orders with custom logic, new columns, data cleaning
 
-API-call to gather up to date companies records from HubSpot
+API-call to gather up to date companies records from HubSpot and send to SQL db
 
 New views in SQL to reconcile orders and companies records. Import updated companies table to HubSpot
+
+# Insights
+
+# Recommendations
+

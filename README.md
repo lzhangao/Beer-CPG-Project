@@ -6,6 +6,7 @@ The goal of this project was to design a centralized analytics workflow that con
 # Data Structure Overview
 ![Orders Data Structure](https://github.com/lzhangao/Beer-CPG-Project/blob/e5822b433967fd0878640461c184a950aff2e408/orders_ds.jpg)
 
+Orders Data Structure
 | Customer Key  | int    |
 |---------------|--------|
 | Customer Name | string |

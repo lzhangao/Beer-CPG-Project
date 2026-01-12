@@ -59,6 +59,7 @@ The goal of this project was to design a centralized analytics workflow that con
 
 # Process Review
 ![data structure diagram](data_structure_diagram.jpg)
+
 Complicated Google Sheets system requires daily manual reconcialiation of incoming order CSVs and HubSpot customer properties. Requires sales leaders to consume significant time to prepare for weekly rep oversight, distributor alignment, and report/KPI generation for senior stakeholder visibility.
 
 # Methods

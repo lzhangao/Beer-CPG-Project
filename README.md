@@ -65,15 +65,15 @@ The existing workflow relied on a network of interdependent Google Sheets used t
 
 This process introduced several constraints:
 
-High manual overhead: Daily reconciliation consumed significant sales leadership time, reducing capacity for coaching, distributor coordination, and pipeline management.
+  High manual overhead: Daily reconciliation consumed significant sales leadership time, reducing capacity for coaching, distributor coordination, and pipeline management.
 
-Error risk and version drift: Multiple sheets with duplicated logic increased the likelihood of formula breakage, inconsistent definitions, and conflicting outputs across reports.
+  Error risk and version drift: Multiple sheets with duplicated logic increased the likelihood of formula breakage, inconsistent definitions, and conflicting outputs   across reports.
 
-Delayed visibility: Reporting lagged behind actual sales activity, limiting the usefulness of weekly rep reviews and senior KPI dashboards.
+  Delayed visibility: Reporting lagged behind actual sales activity, limiting the usefulness of weekly rep reviews and senior KPI dashboards.
 
-Limited scalability: As order volume, SKUs, and sales reps increased, the system required proportional increases in manual effort and became increasingly brittle.
+  Limited scalability: As order volume, SKUs, and sales reps increased, the system required proportional increases in manual effort and became increasingly unsustainable.
 
-Poor auditability: Historical changes to customer attributes and order mappings were difficult to trace, limiting confidence in reported metrics.
+  Poor auditability: Historical changes to customer attributes and order mappings were difficult to trace, limiting confidence in reported metrics.
 
 As a result, sales operations and leadership were forced to prioritize data preparation over analysis and decision-making, constraining the organization’s ability to respond quickly to performance trends and account-level risks.
 

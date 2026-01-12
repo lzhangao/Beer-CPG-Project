@@ -4,7 +4,6 @@ This project supports a small B2B craft beer company that distributes packaged p
 The goal of this project was to design a centralized analytics workflow that connected distributor sales data with internal CRM data, standardized customer and product records, and enabled ongoing reporting while minimizing manual intervention. The solution focused on building a clean data structure, automating daily ingestion, and delivering clear performance insights to non-technical stakeholders across sales and operations.
 
 # Data Structure Overview
-![data structure diagram](data_structure_diagram.jpg)
 
 |Orders         |type   |
 |---------------|--------|
@@ -59,6 +58,9 @@ The goal of this project was to design a centralized analytics workflow that con
 | Barrels YTD       | float  |
 
 # Process Review
+![data structure diagram](data_structure_diagram.jpg)
+Complicated Google Sheets system requires daily manual reconcialiation of incoming order CSVs and HubSpot customer properties. Requires sales leaders to consume significant time to prepare for weekly rep oversight, distributor alignment, and report/KPI generation for senior stakeholder visibility.
+
 # Methods
 Implemented automated CSV ingestion of distributor order data via email-triggered Azure Logic Apps. Files are written to Azure Blob Storage and processed by a SQL Server stored procedure.
 

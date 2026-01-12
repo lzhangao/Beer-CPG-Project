@@ -5,7 +5,7 @@ The goal of this project was to design a centralized analytics workflow that con
 
 # Data Structure Overview
 
-## Orders Data Structure
+Orders Data Structure
 | Orders Columns| data type|
 |---------------|--------|
 | Customer Key  | int    |
@@ -25,7 +25,7 @@ The goal of this project was to design a centralized analytics workflow that con
 | Barrels       | float  |
 | Net Revenue   | float  |
 
-## Meetings Data Structure
+Meetings Data Structure
 | Meetings Columns   | data type|
 |--------------------|----------|
 | Company ID         | int      |
@@ -37,7 +37,7 @@ The goal of this project was to design a centralized analytics workflow that con
 | Associated Deal    | string   |
 | Associated Deal ID | int      |
 
-## Companies Data Structure
+Companies Data Structure
 | Companies columns | data type|
 |-------------------|--------|
 | Record ID         | int    |

@@ -57,3 +57,9 @@ The goal of this project was to design a centralized analytics workflow that con
 | Order Cadence     | int    |
 | Barrels Per Month | float  |
 | Barrels YTD       | float  |
+
+# Methods
+Email ingestion of CSV orders
+Azure logic app sends CSV to blob storage and runs stored procedure writing records into SQL table 
+Raw order table to compile all raw orders from distributor
+Cleaned order table to compile orders with custom logic, new columns, data cleaning

@@ -63,6 +63,8 @@ The goal of this project was to design a centralized analytics workflow that con
 
 The existing workflow relied on a network of interdependent Google Sheets used to manually ingest, clean, and reconcile daily distributor order CSVs against HubSpot customer records. Each incoming file required hands-on validation, copy/paste transformations, and manual joins to CRM exports in order to align orders with accounts, territories, and sales ownership.
 
+![workflowdiagram](data_handling_diagram.jpg)
+
 This process introduced several constraints:
 
   High manual overhead: Daily reconciliation consumed significant sales leadership time, reducing capacity for coaching, distributor coordination, and pipeline management.
